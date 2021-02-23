@@ -600,7 +600,7 @@
   display:block;
   position: fixed;
   z-index: 999999;
-  padding-top: 15%;
+  padding-top: 10%;
   left: 0;
   top: 0;
   width: 100%;
@@ -614,24 +614,9 @@
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
+  margin-left:20%;
   border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+  width: 70%;
 }
 </style>
         <div id="myModal" class="modal">

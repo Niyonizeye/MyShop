@@ -13,7 +13,6 @@
         <link rel="stylesheet" href="{{asset('assets/front/css/booststrap.min.css')}}">
         <link rel="stylesheet" href="{{asset('assets/front/css/font-awesome.min.css')}}">
         <link rel="icon" href="{{asset('assets/front/img/log1.png')}}">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
 
     <body>
