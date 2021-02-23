@@ -15,6 +15,8 @@ Route::get('/affiliate/login', 'Front\FrontController@login')->name('front.login
 Route::get('/affiliate/register', 'Front\FrontController@register')->name('front.register');
 Route::get('affiliate/about', 'Front\FrontController@about')->name('about');
 Route::get('affiliate/contact_us', 'Front\FrontController@contact')->name('contact');
+Route::get('affiliate/modal','Front\FrontController@modal')->name('modal');
+Route::get('affiliate/sendEmail','Front\FrontController@sendEmail')->name('modal');
 // End front pages controller
 // Route::get('/', function () {
 // return view('welcome');

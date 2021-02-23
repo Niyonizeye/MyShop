@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
+use App\Mail\TestMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class FrontController extends Controller
 {
@@ -31,4 +33,20 @@ class FrontController extends Controller
     public function about(){
         return view('front.about');
     }
+
+    // modal for payment
+
+    public function modal(){
+        return view('front.modal');
+    }
+
+    public function sendEmail(){
+        $details = [
+            'title' => 'Email From Jean Paul',
+            'body' => 'Be sorry for  this am testing the send email at all dont wory'
+        ];
+        Mail::to("aimeanathole@gmail.com","niyoeanpaul@gmail.com")->send(new TestMail($details));
+        return "Email Sent";
+    }
+
 }

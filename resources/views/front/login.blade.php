@@ -1,11 +1,6 @@
 @include('front.includes.header')
 
-    <!-- <div id="overlayer"></div>
-    <div class="loader">
-        <div class="spinner-border text-primary" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div> -->
+
     <!-- start of banner -->
     <!-- Hero Section Begin -->
 
@@ -37,9 +32,13 @@
                     <div class="container-login100-form-btn">
                         <div class="wrap-login100-form-btn">
                             <div class="login100-form-bgbtn"></div>
-                            <button class="login100-form-btn">
-                                Login
-                            </button>
+                                    <button class="login100-form-btn" id="logbutton">
+                                       Login
+                                      <div class="spinner-border m-5" style="width: 3rem; height: 3rem;display:none" role="status" id="loader">
+                                      </div>
+                                    </button>
+                            
+                            
                         </div>
                     </div>
                     <br>
@@ -55,6 +54,11 @@
                 </form>
             </div>
         </div>
+        <script>
+            document.getElementById("logbutton").addEventListener("click", function() {
+            document.getElementById("loader").style.display="block";
+            });
+        </script>
     </div>
     <!-- Hero Section End -->
     <!-- end of banner -->
