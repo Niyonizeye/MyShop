@@ -23,6 +23,7 @@ Route::get('affiliate/sendEmail','Front\FrontController@sendEmail')->name('modal
 // });
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/affiliate/dashboardSignup', 'dashboard\a\DashboardController@dashboardSignup')->name('dashboardSignup');
 Route::get('/affiliate/dashboard', 'dashboard\a\DashboardController@dashboard')->name('dashboard');
 Route::get('/affiliate/starter', 'dashboard\a\DashboardController@starter')->name('starter');
 Route::get('/affiliate/topbar', 'dashboard\a\DashboardController@topbar')->name('topbar');

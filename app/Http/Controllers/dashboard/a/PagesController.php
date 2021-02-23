@@ -8,27 +8,27 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     public function activation(){
-        return view('dashboard.a.pages.activation_package');
+        return view('Dashboard.a.pages.activation_package');
     }
     // end of  function
     public function balance(){
-        return view('dashboard.a.pages.balance');
+        return view('Dashboard.a.pages.balance');
     }
     // end of  function
     public function clicked_list(){
-        return view('dashboard.a.pages.clicked_list');
+        return view('Dashboard.a.pages.clicked_list');
     }
     // end of  function
     public function education_packages(){
-        return view('dashboard.a.pages.education_packages');
+        return view('Dashboard.a.pages.education_packages');
     }
     // end of  function
     public function team_structure(){
-        return view('dashboard.a.pages.team_structure');
+        return view('Dashboard.a.pages.team_structure');
     }
     // end of  function 
     public function view_point(){
-        return view('dashboard.a.pages.view_point');
+        return view('Dashboard.a.pages.view_point');
     }
     public function account(){
         return view('Dashboard.a.pages.account');
@@ -79,7 +79,7 @@ class PagesController extends Controller
     }
     // end of  function 
     public function chat_questions(){
-        return view('dashboard.a.pages.chat_questions');
+        return view('Dashboard.a.pages.chat_questions');
     }
     // end of  function 
     public function package_question(){

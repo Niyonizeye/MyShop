@@ -7,6 +7,15 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
+    /**
+     * dashboard for  user signup
+     */
+    public function dashboardSignup(){
+        return view('Dashboard.a.dashboardSignup');
+    }
+    /**
+     * end of signup
+     */
     public function dashboard(){
         return view('Dashboard.a.dashboard');
     }
